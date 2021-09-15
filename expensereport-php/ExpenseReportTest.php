@@ -7,7 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 class ExpenseReportTest extends TestCase
 {
     public function testExpenseReport(): void {
-        
+        $expenseReport = new ExpenseReport();
     }
 
 }
