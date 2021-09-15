@@ -13,5 +13,8 @@
         "files": [
             "ResultPrinter.php"
         ]
+    },
+    "require": {
+        "infection/infection": "^0.25.1"
     }
 }
