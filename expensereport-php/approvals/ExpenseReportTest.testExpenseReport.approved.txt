@@ -5,3 +5,16 @@ Expense Report YYYY-MM-DD HH:MM:SSxm
 Meal Expenses: 0
 Total Expenses: 0
 
+array (
+  0 => 
+  Expense::__set_state(array(
+     'type' => 1,
+     'amount' => 12,
+  )),
+)
+####
+Expense Report YYYY-MM-DD HH:MM:SSxm
+Dinner	12	 
+Meal Expenses: 12
+Total Expenses: 12
+
