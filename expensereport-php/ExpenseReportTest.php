@@ -10,7 +10,8 @@ class ExpenseReportTest extends TestCase
     public function testExpenseReport(): void {
         $possibleExpenses = [
             [],
-            [new Expense(ExpenseType::DINNER, 12)]
+            [new Expense(ExpenseType::DINNER, 12)],
+            [new Expense(ExpenseType::BREAKFAST, 12)],
         ];
 
         $output = '';
