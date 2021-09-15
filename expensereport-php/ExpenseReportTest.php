@@ -13,6 +13,7 @@ class ExpenseReportTest extends TestCase
         ob_start();
         $expenseReport->print_report($expenses);
         $result = ob_get_contents();
+        ob_end_flush();
         ob_clean();
 
         $formattedResult = (new ResultPrinter())->print($result);
