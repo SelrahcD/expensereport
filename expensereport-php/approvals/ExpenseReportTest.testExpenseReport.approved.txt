@@ -31,3 +31,16 @@ Breakfast	12
 Meal Expenses: 12
 Total Expenses: 12
 
+array (
+  0 => 
+  Expense::__set_state(array(
+     'type' => 3,
+     'amount' => 12,
+  )),
+)
+####
+Expense Report YYYY-MM-DD HH:MM:SSxm
+Car Rental	12	 
+Meal Expenses: 0
+Total Expenses: 12
+

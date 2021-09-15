@@ -12,6 +12,7 @@ class ExpenseReportTest extends TestCase
             [],
             [new Expense(ExpenseType::DINNER, 12)],
             [new Expense(ExpenseType::BREAKFAST, 12)],
+            [new Expense(ExpenseType::CAR_RENTAL, 12)],
         ];
 
         $output = '';
