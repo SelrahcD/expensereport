@@ -8,6 +8,14 @@ require __DIR__ . '/vendor/autoload.php';
 class ExpenseReportTest extends TestCase
 {
     public function testExpenseReport(): void {
+
+        $formattedResult = $this->testExpenseReportWithExpenses([]);
+
+        Approvals::verifyString($formattedResult);
+    }
+
+    private function testExpenseReportWithExpenses(): string
+    {
         $expenseReport = new ExpenseReport();
         $expenses = [];
         ob_start();
@@ -16,8 +24,7 @@ class ExpenseReportTest extends TestCase
         ob_end_flush();
         ob_clean();
 
-        $formattedResult = (new ResultPrinter())->print($result);
-        Approvals::verifyString($formattedResult);
+        return (new ResultPrinter())->print($result);
     }
 
 }
