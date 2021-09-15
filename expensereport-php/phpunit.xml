@@ -1,13 +1,16 @@
-<phpunit
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
-        backupGlobals="true"
-        backupStaticAttributes="false"
-        bootstrap="vendor/autoload.php"
->
-    <coverage processUncoveredFiles="true">
-        <include>
-            <file>ExpenseReport.php</file>
-        </include>
-    </coverage>
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" backupGlobals="true" backupStaticAttributes="false" bootstrap="vendor/autoload.php">
+
+    <coverage includeUncoveredFiles="false">
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </coverage>
+
+  <testsuites>
+    <testsuite name="Unit test">
+      <directory>./tests</directory>
+    </testsuite>
+  </testsuites>
+
 </phpunit>

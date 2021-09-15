@@ -7,7 +7,7 @@
     },
     "autoload": {
         "files": [
-            "ExpenseReport.php"
+            "src/ExpenseReport.php"
         ]
     },
     "autoload-dev": {
