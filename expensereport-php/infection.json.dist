@@ -1,0 +1,22 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "testFramework":"phpunit",
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "logs": {
+        "text": "infection.log",
+        "summary": "summary.log",
+        "perMutator": "per-mutator.md"
+    },
+    "mutators": {
+        "@default": true
+    },
+    "phpUnit": {
+        "customPath": "./vendor/bin/phpunit"
+    },
+    "testFrameworkOptions": "",
+    "initialTestsPhpOptions": "-d xdebug.mode=coverage"
+}

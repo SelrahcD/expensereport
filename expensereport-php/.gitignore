@@ -1,2 +1,5 @@
 vendor
 .phpunit.result.cache
+summary.log
+infection.log
+per-mutator.md
