@@ -1,5 +1,6 @@
 <?php
 
+use ApprovalTests\Approvals;
 use PHPUnit\Framework\TestCase;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -13,7 +14,7 @@ class ExpenseReportTest extends TestCase
         $expenseReport->print_report($expenses);
         $result = ob_get_contents();
         ob_clean();
-        \ApprovalTests\Approvals::verifyString($result);
+        Approvals::verifyString($result);
     }
 
 }
