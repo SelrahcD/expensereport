@@ -1,0 +1,15 @@
+- Takes a list of expenses
+- Init total to 0
+- Prints current date
+- For each expense
+	- if dinner or breakfast (meals) add to meal expense total
+	- gets name from switch case
+	- check if expense if greater that allowed expense for type
+	- render a tsv of name, amount and a cross indicating of expense if over limit
+	- add expense amount to total amount
+- print total meal expense
+- print total expenses
+
+
+Add new expense type lunch
+Add new limit check
