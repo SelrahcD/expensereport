@@ -76,3 +76,16 @@ Dinner	5000
 Meal Expenses: 5000
 Total Expenses: 5000
 
+array (
+  0 => 
+  Expense::__set_state(array(
+     'type' => 1,
+     'amount' => 5001,
+  )),
+)
+####
+Expense Report YYYY-MM-DD HH:MM:SSxm
+Dinner	5001	X
+Meal Expenses: 5001
+Total Expenses: 5001
+
