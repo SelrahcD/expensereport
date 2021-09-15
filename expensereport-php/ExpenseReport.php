@@ -32,7 +32,11 @@ class ExpenseReport {
                 case ExpenseType::CAR_RENTAL: $expenseName = "Car Rental"; break;
             }
 
-            $mealOverExpensesMarker = $expense->type == ExpenseType::DINNER && $expense->amount > 5000 || $expense->type == ExpenseType::BREAKFAST && $expense->amount > 1000 ? "X" : " ";
+            if ($expense->type == ExpenseType::DINNER && $expense->amount > 5000 || $expense->type == ExpenseType::BREAKFAST && $expense->amount > 1000) {
+                $mealOverExpensesMarker = "X";
+            } else {
+                $mealOverExpensesMarker = " ";
+            }
             print($expenseName . "\t" . $expense->amount . "\t" . $mealOverExpensesMarker . "\n");
             $total += $expense->amount;
         }
