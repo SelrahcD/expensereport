@@ -8,16 +8,23 @@ require __DIR__ . '/vendor/autoload.php';
 class ExpenseReportTest extends TestCase
 {
     public function testExpenseReport(): void {
+        $possibleExpenses = [
+            [],
+        ];
 
-        $formattedResult = $this->testExpenseReportWithExpenses([]);
+        $output = '';
+        foreach ($possibleExpenses as $expenses) {
+            echo var_export($expenses);
+            $result = $this->testExpenseReportWithExpenses($expenses);
+            $output .= var_export($expenses, true) . PHP_EOL . '####' . PHP_EOL . $result . PHP_EOL;
+        }
 
-        Approvals::verifyString($formattedResult);
+        Approvals::verifyString($output);
     }
 
-    private function testExpenseReportWithExpenses(): string
+    private function testExpenseReportWithExpenses($expenses): string
     {
         $expenseReport = new ExpenseReport();
-        $expenses = [];
         ob_start();
         $expenseReport->print_report($expenses);
         $result = ob_get_contents();
