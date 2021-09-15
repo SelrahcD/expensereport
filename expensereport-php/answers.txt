@@ -13,3 +13,7 @@
 
 Add new expense type lunch
 Add new limit check
+
+
+Results is printed => ob_start / ob_get_contents / ob_clean does the job
+Date changes =>
