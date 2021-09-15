@@ -14,7 +14,9 @@ class ExpenseReportTest extends TestCase
         $expenseReport->print_report($expenses);
         $result = ob_get_contents();
         ob_clean();
-        Approvals::verifyString($result);
+
+        $formattedResult = (new ResultPrinter())->print($result);
+        Approvals::verifyString($formattedResult);
     }
 
 }

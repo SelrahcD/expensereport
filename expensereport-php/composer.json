@@ -8,5 +8,10 @@
         "files": [
             "ExpenseReport.php"
         ]
+    },
+    "autoload-dev": {
+        "files": [
+            "ResultPrinter.php"
+        ]
     }
 }
