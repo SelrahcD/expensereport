@@ -1,9 +1,9 @@
 {
     "name": "root/app",
-    "require-dev": {
-        "php": "8.1",
-        "phpunit/phpunit": "^9.5",
-        "approvals/approval-tests": "^1.4"
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
     },
     "autoload": {
         "files": [
@@ -15,7 +15,9 @@
             "ResultPrinter.php"
         ]
     },
-    "require": {
-        "infection/infection": "^0.25.1"
+    "require-dev": {
+        "infection/infection": "^0.25.1",
+        "phpunit/phpunit": "^9.5",
+        "approvals/approval-tests": "^1.4"
     }
 }
